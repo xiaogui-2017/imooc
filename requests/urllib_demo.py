@@ -29,7 +29,6 @@ def use_params_urllib2():
     print ''.join([line for line in response.readlines()])
 
 
-
 if __name__ == '__main__':
     use_simple_urllib2()
     use_params_urllib2()
