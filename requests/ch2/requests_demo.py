@@ -25,9 +25,13 @@ def use_params_requests():
     print '>>>>Request body:'
     print response.text
 
+
 if __name__ == '__main__':
     print '>>>Use simple requests:'
     use_simple_requests()
     print ''
     print '>>>Use params requests:'
     use_params_requests()
+
+
+
