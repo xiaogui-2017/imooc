@@ -22,6 +22,4 @@ def count():
 
 # 由于f1、f2、f3并没有被调用，所以，此时他们并未计算 i*i, 直到被调用的时候才开始才开始计算i×i
 f1, f2, f3 = count()
-print f1()
-print f2()
-print f3()
+print f1(), f2(), f3()
