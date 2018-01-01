@@ -9,15 +9,18 @@ def performance(ms):
     :param unit:
     :return:
     """
+
     def ourter(unit):
         def wraper(*args, **kwargs):
             s_time = time.time()
             r = unit(*args, **kwargs)
             e_time = time.time()
             # 之前的思路不变， 装饰器的参数ms,最内部函数依然能够调用
-            print '执行的时间是%s%s' % (e_time-s_time, ms)
+            print '执行的时间是%s%s' % (e_time - s_time, ms)
             return r
+
         return wraper
+
     return ourter
 
 
@@ -28,4 +31,3 @@ def factorial(n):
 
 print factorial(10)
 print factorial.__name__
-
