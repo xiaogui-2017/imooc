@@ -6,5 +6,6 @@ def is_not_empty(s):
 
 
 # filter自动过滤None
+# todo 如何免输git帐号和密码
 s_filter = filter(is_not_empty, ['test', None, '', 'str', '  ', 'END'])
 print s_filter
