@@ -34,7 +34,22 @@ def count2():
     for i in range(1, 4):
         def f(m=i):
             return m * m
+
         fs.append(f)
+    return fs
+
+
+def count3():
+    """
+    只要将这里改为fs.append(f())即可，这样就在这一步的时候已经进行了i*i的运算，将结果保存了
+    :return:
+    """
+    fs = []
+    for i in range(1, 4):
+        def f():
+            return i * i
+
+        fs.append(f())
     return fs
 
 
@@ -43,3 +58,5 @@ f4, f5, f6 = count2()
 print f1(), f2(), f3()
 print f4(), f5(), f6()
 
+for i in count3():
+    print i
