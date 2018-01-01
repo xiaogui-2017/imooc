@@ -1,6 +1,7 @@
 # -*- coding=utf-8 -*-
 def is_not_empty(s):
     # 不要None， 也不要长度为0的
+    # strip取出空字符'\n' '\r' '\t' ' '
     return s and len(s.strip()) > 0
 
 
